@@ -22,14 +22,14 @@
   <body>
     <!-- Header starts-->
     <header>
-      <img src="images/logo.svg" alt="log" />
+      <img class="logo" src="images/logo.svg" alt="logo" />
     </header>
     <!-- Header ends -->
 
     <main>
       <!-- Notice starts -->
       <div class="notice">
-        <h1 class="launch-notice">We are launchibg <span>soon!</span></h1>
+        <p class="launch-notice">We are launching <span>soon!</span></p>
         <p class="sub-notice">Subscribe and get notified</p>
       </div>
       <!-- Notice ends -->
@@ -37,8 +37,8 @@
       <!-- Input area starts -->
       <div class="input-area">
         <div class="input-email">
-          <input type="email" placeholder="Your email address" />
-          <p class="error-message">Please provide a valid email address</p>
+          <input type="email" placeholder="Your email address..." />
+          <p class="error-message hide">Please provide a valid email address</p>
         </div>
         <button>Notify me</button>
       </div>
@@ -46,6 +46,7 @@
 
       <!-- Image area starts -->
       <img
+        class="hero"
         src="images/illustration-dashboard.png"
         alt="illustration dashboard"
       />
@@ -53,8 +54,8 @@
 
       <!-- Social media area starts -->
       <div class="social-media">
-        <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
       </div>
       <!-- Social media area ends -->
