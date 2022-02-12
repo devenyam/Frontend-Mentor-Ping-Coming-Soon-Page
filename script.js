@@ -4,8 +4,6 @@ const button = document.querySelector('.input-btn');
 const errorMessage = document.querySelector('.error-message');
 const inputEmail = document.querySelector('.email');
 
-console.log(inputEmail.value);
-
 button.addEventListener('click', () => {
   if (!inputEmail.value.includes('@gmail.com')) {
     errorMessage.classList.remove('hide');
