@@ -17,6 +17,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <title>Frontend Mentor | Ping Coming Page Soon</title>
   </head>
   <body>
@@ -37,10 +38,15 @@
       <!-- Input area starts -->
       <div class="input-area">
         <div class="input-email">
-          <input type="email" placeholder="Your email address..." />
+          <input
+            class="email"
+            type="email"
+            value=""
+            placeholder="Your email address..."
+          />
           <p class="error-message hide">Please provide a valid email address</p>
         </div>
-        <button>Notify me</button>
+        <button class="input-btn">Notify me</button>
       </div>
       <!-- Input area ends -->
 

@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 html,
@@ -19,6 +20,7 @@ body {
   width: 100vw;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
+
   /* padding: 0 10px; */
 }
 
@@ -70,7 +72,7 @@ main .notice {
   width: 90%;
 }
 
-.input-area .input-email input[type='email'] {
+.input-area .input-email .email {
   width: 100%;
   padding: 15px 30px;
   border: 1px solid hsl(223, 100%, 88%);
@@ -79,7 +81,7 @@ main .notice {
   margin: 5px 0;
 }
 
-.input-area .input-email input::placeholder {
+.input-area .input-email .email::placeholder {
   color: hsl(223, 100%, 88%);
 }
 
@@ -105,7 +107,7 @@ main .notice {
 .hero {
   margin: 10px 0 120px 0;
   height: 250px;
-  height: 200px;
+  width: 370px;
   user-select: none;
 }
 
@@ -138,4 +140,84 @@ main .notice {
 
 .hide {
   display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .hero {
+    min-height: 400px;
+    min-width: 500px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    min-height: 400px;
+    min-width: 550px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html,
+  body {
+    gap: 0.5em;
+    overflow: hidden;
+  }
+
+  header .logo {
+    width: 70px;
+  }
+
+  .notice .launch-notice {
+    font-size: 1.8em;
+  }
+
+  .notice .sub-notice {
+    font-size: 16px;
+  }
+
+  .input-area {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5em;
+    position: relative;
+  }
+
+  .input-area .input-email {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .input-area .input-email .error-message {
+    margin-left: 40px;
+    position: absolute;
+    top: 100%;
+  }
+
+  .input-area button {
+    margin-top: 6px;
+    width: 30%;
+    transition: 0.8s ease-in;
+  }
+
+  .input-area button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    letter-spacing: 2px;
+    width: 50%;
+  }
+
+  .hero {
+    margin-top: 40px;
+    min-height: 400px;
+    min-width: 600px;
+  }
+
+  .social-media i:hover {
+    background: hsl(223, 87%, 63%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+    transition: background 0.7s;
+  }
 }
