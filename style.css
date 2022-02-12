@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 
 html,
@@ -20,8 +19,6 @@ body {
   width: 100vw;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
-
-  /* padding: 0 10px; */
 }
 
 header .logo {
@@ -218,14 +215,11 @@ main .notice {
   .input-area button {
     margin-top: 6px;
     width: 30%;
-    /* transition: 0.8s ease-in; */
   }
 
   .input-area button:hover {
     cursor: pointer;
     opacity: 0.9;
-    /* letter-spacing: 2px; */
-    /* width: 50%; */
   }
 
   .hero {
