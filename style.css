@@ -87,7 +87,6 @@ main .notice {
 
 .input-area .input-email .error-message {
   font-size: 12px;
-  color: hsl(354, 100%, 66%);
   font-style: italic;
   margin-bottom: 1.5em;
 }
@@ -142,6 +141,24 @@ main .notice {
   display: none;
 }
 
+@media screen and (max-width: 350px) {
+  .notice .launch-notice {
+    font-size: 1em;
+  }
+
+  .input-area {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero {
+    height: 200px;
+    width: 280px;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 500px) {
   .hero {
     min-height: 400px;
@@ -160,7 +177,7 @@ main .notice {
   html,
   body {
     gap: 0.5em;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   header .logo {
@@ -188,6 +205,10 @@ main .notice {
     align-items: flex-start;
   }
 
+  .input-area .input-emai .email:active {
+    background: transparent;
+  }
+
   .input-area .input-email .error-message {
     margin-left: 40px;
     position: absolute;
@@ -197,20 +218,20 @@ main .notice {
   .input-area button {
     margin-top: 6px;
     width: 30%;
-    transition: 0.8s ease-in;
+    /* transition: 0.8s ease-in; */
   }
 
   .input-area button:hover {
     cursor: pointer;
     opacity: 0.9;
-    letter-spacing: 2px;
-    width: 50%;
+    /* letter-spacing: 2px; */
+    /* width: 50%; */
   }
 
   .hero {
     margin-top: 40px;
     min-height: 400px;
-    min-width: 600px;
+    min-width: 650px;
   }
 
   .social-media i:hover {
