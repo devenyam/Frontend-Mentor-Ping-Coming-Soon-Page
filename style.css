@@ -179,12 +179,11 @@ main .notice {
   }
 
   header .logo {
-    height: 30px;
     width: 80px;
   }
 
   .notice .launch-notice {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .notice .sub-notice {
