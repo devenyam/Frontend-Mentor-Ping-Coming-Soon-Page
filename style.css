@@ -102,7 +102,7 @@ main .notice {
 }
 
 .hero {
-  margin: 10px 0 120px 0;
+  margin: 10px 0 80px 0;
   height: 250px;
   width: 370px;
   user-select: none;
@@ -123,6 +123,7 @@ main .notice {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  font-size: 16px;
   color: hsl(223, 87%, 63%);
 }
 
