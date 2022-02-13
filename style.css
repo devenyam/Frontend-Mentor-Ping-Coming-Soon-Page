@@ -19,7 +19,7 @@ body {
   width: 100vw;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 header .logo {
@@ -179,7 +179,8 @@ main .notice {
   }
 
   header .logo {
-    width: 70px;
+    height: 30px;
+    width: 80px;
   }
 
   .notice .launch-notice {
