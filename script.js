@@ -5,7 +5,7 @@ const errorMessage = document.querySelector('.error-message');
 const inputEmail = document.querySelector('.email');
 
 button.addEventListener('click', () => {
-  if (!inputEmail.value.includes('@gmail.com')) {
+  if (!inputEmail.value.includes('@gmail.com') || !inputEmail.value.includes('@yahoo.com')) {
     errorMessage.classList.remove('hide');
     inputEmail.classList.add('error');
     inputEmail.style.borderColor = 'hsl(354, 100%, 66%)';
